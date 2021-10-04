@@ -169,6 +169,7 @@ exports[`renders snackbar with action button 1`] = `
         accessibilityRole="button"
         accessibilityState={
           Object {
+            "busy": undefined,
             "disabled": undefined,
           }
         }

@@ -18,6 +18,7 @@ exports[`renders button with color 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": undefined,
       }
     }
@@ -116,6 +117,7 @@ exports[`renders button with custom testID 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": undefined,
       }
     }
@@ -215,6 +217,7 @@ exports[`renders button with icon 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": undefined,
       }
     }
@@ -358,6 +361,7 @@ exports[`renders button with icon in reverse order 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": undefined,
       }
     }
@@ -510,6 +514,7 @@ exports[`renders contained contained with mode 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": undefined,
       }
     }
@@ -608,6 +613,7 @@ exports[`renders disabled button 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": true,
       }
     }
@@ -706,6 +712,7 @@ exports[`renders loading button 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": true,
         "disabled": undefined,
       }
     }
@@ -742,6 +749,7 @@ exports[`renders loading button 1`] = `
       }
     >
       <View
+        accessibilityElementsHidden={true}
         accessibilityRole="progressbar"
         accessibilityState={
           Object {
@@ -749,6 +757,7 @@ exports[`renders loading button 1`] = `
           }
         }
         accessible={true}
+        importantForAccessibility="no"
         style={
           Array [
             Object {
@@ -994,6 +1003,7 @@ exports[`renders outlined button with mode 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": undefined,
       }
     }
@@ -1092,6 +1102,7 @@ exports[`renders text button by default 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": undefined,
       }
     }
@@ -1190,6 +1201,7 @@ exports[`renders text button with mode 1`] = `
     accessibilityRole="button"
     accessibilityState={
       Object {
+        "busy": undefined,
         "disabled": undefined,
       }
     }

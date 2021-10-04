@@ -273,10 +273,16 @@ const Button = ({
         onPressOut={handlePressOut}
         accessibilityLabel={accessibilityLabel}
         // @ts-expect-error We keep old a11y props for backwards compat with old RN versions
-        accessibilityTraits={disabled ? ['button', 'disabled'] : 'button'}
+        accessibilityTraits={
+          disabled
+            ? ['button', 'disabled']
+            : loading
+            ? ['button', 'busy']
+            : 'button'
+        }
         accessibilityComponentType="button"
         accessibilityRole="button"
-        accessibilityState={{ disabled }}
+        accessibilityState={{ disabled, busy: loading }}
         accessible={accessible}
         disabled={disabled}
         rippleColor={rippleColor}
@@ -299,6 +305,8 @@ const Button = ({
           ) : null}
           {loading ? (
             <ActivityIndicator
+              importantForAccessibility="no"
+              accessibilityElementsHidden
               size={customLabelSize ?? 16}
               color={
                 typeof customLabelColor === 'string'

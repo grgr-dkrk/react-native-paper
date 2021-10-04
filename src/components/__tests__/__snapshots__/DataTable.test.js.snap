@@ -1104,6 +1104,7 @@ exports[`renders data table pagination with options select 1`] = `
           accessibilityRole="button"
           accessibilityState={
             Object {
+              "busy": undefined,
               "disabled": undefined,
             }
           }
